@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+/* home page: */
+#site-container {
+    background-color: #20491A;
+    color: #fff;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* display: none; */
+}
+
+#about {
+    margin-top: 1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+#about:hover,
+#work:hover {
+    font-weight: 900;
+    transition: 0.3s;
+}
+
+#about:focus,
+#work:focus {
+    font-weight: 900;
+    outline: 3px solid #fff;
+    outline-offset: 5px;
+}
+
+#bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#name {
+    font-weight: 900;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+#title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+}
+
+#work {
+    margin-bottom: 1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+/* about page (popup tab): */
+#about-container {
+    background-color: #fff;
+    color: #000;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+}
+
+/* maybe add some js so that the colour changes when you move your mouse */
+#about-container .blue {
+    color: #50B0CE;
+}
+
+#about-me {
+    font-size: 2rem;
+    font-weight: 900;
+    padding: 1rem;
+    text-align: left;
+}
+
+#social {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    /* align-content: left; */
+    padding: 1rem;
+}
+
+    #social a, 
+    #social p {
+        color: #000;
+        text-decoration: none;
+        padding: 0.5rem;
+        cursor: pointer;
+    }
+
+    #social a:hover,
+    #social p:hover {
+        background-color: #000;
+        color: #fff;
+        transition: 0.3s;
+    }
+
+    #social a:focus,
+    #social p:focus {
+        background-color: #000;
+        color: #fff;
+        outline: none;
+        transition: 0.3s;
+    }
+
+/* projects page (popup tab): */
+#work-container {
+    background-color: #D4CABB;
+    color: #000;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    flex-direction: column;
+    display: none;
+}
+
+#projects-container {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-tile {
+    padding: 1rem;
+    width: 80vw;
+}
+
+.project-tile a {
+    font-weight: 900;
+}
+
+.project-tile a:hover {
+    background: #fff;
+    transition: 0.3s;
+    outline: none;
+}
+
+.project-tile a:focus {
+    outline: 3px solid #fff;
+    outline-offset: 1px;
+}
+
+#projects-container img {
+    width: 80vw;
+}
+
+.project-name {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+#work-back {
+    font-size: 2rem;
+    font-weight: 900;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 170px;
+}
+
+#work-back:hover,
+#work-back:focus {
+    background: #fff;
+    color: #000;
+    transition: 0.3s;
+    outline: none;
+}
+
+/* media queries (ipad): */
+@media only screen and (min-width: 768px) {
+    /* home page: */
+    #name {
+        font-size: 4rem;
+    }
+
+    #title {
+        font-size: 1.5rem;
+    }
+
+    /* about page: */
+    #about-me {
+        font-size: 3rem;
+        text-align: justify;
+    }
+
+    #social {
+        font-size: 2rem;
+        text-align: justify;
+    }
+
+    /* projects page: */
+    #projects-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 2rem 0;
+    }
+
+    .project-tile {
+        width: 40vw;
+        padding: 1rem;
+    }
+
+    #projects-container img {
+        width: 40vw;
+    }
+
+    
+}
+
+/* media queries (ipad pro): */
+@media only screen and (min-width: 1024px) {
+    /* about page: */
+    #about-me {
+        font-size: 4rem;
+    }
+}
+
+/* media queries (laptop and larger): */
+@media only screen and (min-width: 1200px) {
+    /* about page: */
+    #about-container {
+        overflow: hidden;
+        height: 100vh;
+    }
+
+    #social {
+        flex-direction: row;
+    }
+
+    /* projects page: */
+    #work-container {
+        height: 100vh;
+    }
+
+
+    .project-tile {
+        width: 25vw;
+        padding: 1rem;
+    }
+
+    #projects-container img {
+        width: 25vw;
+    }
+}
