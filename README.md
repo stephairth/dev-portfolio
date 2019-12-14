@@ -2,6 +2,7 @@
 
 ## Overview
 This is a portfolio to showcase my work as a developer.
+**Live version:** https://stephairth.github.io/dev-portfolio/
 
 ## Features
 * Main page with links to about and work pages
