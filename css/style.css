@@ -34,16 +34,12 @@ a {
 }
 
 #about:hover,
-#work:hover {
-    font-weight: 900;
-    transition: 0.3s;
-}
-
+#work:hover,
 #about:focus,
 #work:focus {
     font-weight: 900;
-    outline: 3px solid #fff;
-    outline-offset: 5px;
+    transition: 0.3s;
+    outline: none;
 }
 
 #bio {
